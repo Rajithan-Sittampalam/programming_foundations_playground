@@ -1,0 +1,13 @@
+prices = [11.20,35.40,14.20]
+
+#die summe der Preise 
+
+total = 0
+for price in prices:
+    total += price
+print(f"The total price is: {total}")
+
+total=sum(prices)
+
+print(f"The total price is: {total}")
+

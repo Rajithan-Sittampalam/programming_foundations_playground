@@ -1,7 +1,3 @@
-msg = ("hello world")
-
-print(msg)
-
 
 # This is a comment
 print("this is a comment") #This is also a comment 
@@ -91,3 +87,58 @@ while count < 5 :
 
 
 
+for number in [1, 2, 3, 4, 5]:
+    print(number)
+print(f"The value of the variable after the loop is: {number}")
+
+# Das hier wird 1,2,3,4,5 ausgegeben und danach die 5. Weil die Variable number nach der Schleife den letzten Wert annimmt.
+
+#-------------------------------------------------------------------------------------
+
+for number in range(5):
+    print(number)
+
+#Range ist von 0 bis x -> Und zb wenn man range(5) macht, dann zählt er von 0 bis 4 (5 nicht mitgezählt)
+#Range starts always at 0
+
+#-------------------------------------------------------------------------------------
+
+
+for name in ["Raji", "Anna", "John"]:
+    print(f"The last name is", {name})
+
+
+
+#-------------------------------------------------------------------------------------
+import time
+
+for sec in range(10, 0, -1):
+    print(sec)
+    time.sleep(1)
+
+# Zählt von 10 bis 1 runter. Der dritte Parameter ist die Schrittweite. Also -1 bedeutet, dass er um 1 runterzählt.
+
+
+#-------------------------------------------------------------------------------------
+
+#Someone orders beverage, food at a restaurant. WE want to create a list 
+
+prices = [11.20,35.40,14.20]
+
+#die summe der Preise 
+
+#Option 1
+total = 0
+for price in prices:
+    total += price
+print(f"The total price is: {total}")
+
+#Option 2
+total=sum(prices)
+
+print(f"The total price is: {total}")
+
+
+#-------------------------------------------------------------------------------------
+
+#
